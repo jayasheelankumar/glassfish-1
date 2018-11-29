@@ -171,8 +171,6 @@ spec:
       - mountPath: "/home/jenkins/.m2/repository/org/glassfish/main"
         name: maven-repo-local-storage
     env:
-      - name: JAVA_TOOL_OPTIONS
-        value: -Xmx2G
       - name: JENKINS_URL
         value: ${JENKINS_URL}
     resources:
