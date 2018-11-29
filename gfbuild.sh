@@ -63,6 +63,7 @@ archive_bundles(){
 }
 
 dev_build(){
+  rm -rf ${HOME}/.m2/repository/org/glassfish/jsonp*
   mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging
 }
 
