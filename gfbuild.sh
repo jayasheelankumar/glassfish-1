@@ -63,6 +63,8 @@ archive_bundles(){
 }
 
 dev_build(){
+  cat /etc/*release
+  mvn --version
   mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging
 }
 
