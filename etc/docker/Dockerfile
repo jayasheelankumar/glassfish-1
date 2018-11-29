@@ -12,7 +12,7 @@ RUN chmod +x /etc/entrypoint.sh && \
     #
     # link jdk
     #
-    ln -f -s /etc/pki/java/cacerts /usr/lib/jvm/jdk8/jre/lib/security/cacerts && \
+    cp -Lf /etc/pki/java/cacerts /usr/lib/jvm/jdk8/jre/lib/security/cacerts && \
     ln -s /usr/lib/jvm/jdk8/bin/* /bin/ && \
     #
     # install maven

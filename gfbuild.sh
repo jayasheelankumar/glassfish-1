@@ -66,7 +66,8 @@ dev_build(){
   cat /etc/*release
   mvn --version
   ls -l /etc/pki/ca-trust/extracted/java/
-  export MAVEN_OPTS="-Djavax.net.debug=all -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
+
+  export MAVEN_OPTS="-Djavax.net.debug=all -Djavax.net.ssl.trustStore=/etc/pki/ca-trust/extracted/java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
   mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging
 }
 
