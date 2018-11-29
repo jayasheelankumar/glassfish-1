@@ -49,7 +49,7 @@ ENV JAVA_HOME /usr/lib/jvm/jdk8
 ENV MAVEN_HOME /usr/share/maven
 ENV M2_HOME /usr/share/maven
 ENV ANT_HOME /usr/share/ant
-ENV JAVA_TOOL_OPTIONS "-Xmx2G -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
+ENV JAVA_TOOL_OPTIONS "-Xmx2G"
 
 ENV HOME /home/jenkins
 WORKDIR /home/jenkins
