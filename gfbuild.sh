@@ -65,6 +65,7 @@ archive_bundles(){
 dev_build(){
   cat /etc/*release
   mvn --version
+  ls -l /etc/pki/ca-trust/extracted/java/
   mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging
 }
 
