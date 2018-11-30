@@ -64,7 +64,7 @@ archive_bundles(){
 
 dev_build(){
   rm -rf ${HOME}/.m2/repository/org/glassfish/jsonp-jaxrs
-  export MAVEN_OPTS="-Djavax.net.debug=all -Djavax.net.ssl.trustStore=/usr/lib/jvm/jdk8/jre/lib/security/cacerts -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=JKS"
+  export MAVEN_OPTS="-Djavax.net.debug=all -Djavax.net.ssl.trustStore=/usr/lib/jvm/jdk8/jre/lib/security/cacerts -Djavax.net.ssl.trustStorePassword=changeit"
   mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging
 }
 
