@@ -66,7 +66,7 @@ dev_build(){
   rm -rf ${HOME}/.m2/repository/org/glassfish/jsonp-jaxrs
   export JAVA_TOOL_OPTIONS="-Xmx2G -Djavax.net.debug=all"
   export MAVEN_OPTS="-Djavax.net.debug=all"
-  mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging -e
+  mvn -U clean install -DskipTests -Dmaven.test.failure.ignore=true -Pstaging -e
 }
 
 build_re_dev(){
