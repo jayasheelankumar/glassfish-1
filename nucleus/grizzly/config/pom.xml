@@ -39,7 +39,6 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <skipTests>true</skipTests>
                     <useSystemClassLoader>true</useSystemClassLoader>
                     <forkMode>always</forkMode>
                 </configuration>
