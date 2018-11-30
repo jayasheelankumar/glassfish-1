@@ -64,6 +64,7 @@ archive_bundles(){
 
 dev_build(){
   env
+  cat ${HOME}/.m2/settings.xml
   rm -rf ${HOME}/.m2/repository/org/glassfish/jsonp-jaxrs
   export MAVEN_OPTS="-Djavax.net.debug=all"
   mvn -U clean install -Dmaven.test.failure.ignore=true -Pstaging -e
